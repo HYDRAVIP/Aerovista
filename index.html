@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>AEROVISTA</title>
+    <style>
+        body {
+            background-color: #0A2541;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        nav {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid rgb(202, 190, 190);
+            padding: 11px;
+            background-color: white;
+        }
+
+        .element:hover {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .logo-img {
+            width: 30px;
+
+        }
+
+        .profile {
+            width: 50px;
+            border: 1px solid rgb(202, 195, 195);
+            border-radius: 50%;
+
+        }
+
+        .logo {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        .container {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            border: 1px solid rgb(189, 183, 183);
+            border-radius: 10px;
+
+        }
+
+        .element {
+            padding: 10px;
+            color: rgb(37, 37, 37, 0.8);
+            font-size: 15px;
+
+        }
+
+
+        .sub-head {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sub-head1 {
+            font-size: smaller;
+            color: grey;
+        }
+
+        .sub-title {
+            color: rgb(42, 225, 225);
+            font-weight: 700;
+
+        }
+
+        .login {
+            text-align: center;
+            border: 1px solid rgba(128, 128, 128, 0.497);
+            max-height: 25px;
+            padding: 7px;
+            border-radius: 10px;
+            margin-top: 8.5px;
+            margin-left: -40px;
+            color: white;
+            background-color: rgba(12, 59, 200, 0.686);
+            font-weight: 700;
+
+        }
+
+        .Title1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .language-bar select {
+            border-style: unset;
+            align-items: center;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+
+
+        }
+
+        .language-bar {
+            border: 1px solid black;
+            max-height: 25px;
+            margin-top: 9px;
+            padding: 7px;
+            border: 1px solid rgb(193, 187, 187);
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+
+        }
+
+        .headset {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 25px;
+            margin-left: -40px;
+        }
+
+        main {
+            margin-top: 25px;
+            width: 1100px;
+            height: 270px;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 220px;
+        }
+
+        .headingss {
+            color: white;
+            text-align: center;
+
+
+        }
+
+        .H1 {
+            border: 1px solid rgb(172, 165, 165);
+            display: inline-block;
+            padding: 6px;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+
+        .H2 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .H3 {
+            font-size: 14px;
+            color: rgb(176, 171, 171);
+        }
+
+        .H4 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .search-btn {
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+
+            border-radius: 10px;
+
+        }
+
+        .search-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+
+
+
+        }
+
+
+
+
+        .button-1:hover {
+            color: white;
+            background-color: black;
+            font-size: 15px;
+
+        }
+
+        .button-1 {
+            padding: 14px;
+
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            font-size: 15px;
+        }
+
+        .search-btn1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+
+        }
+
+        .class,
+        .ads,
+        .Adult {
+            display: flex;
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            padding: 10px;
+            margin: 2px;
+        }
+
+        select {
+            border: none;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+        }
+
+        .middle {
+
+
+            border-radius: 10px;
+            width: 200px;
+            padding: 10px;
+            padding-right: 10px;
+            margin-left: 40px;
+            font-size: 15px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            display: flex;
+
+        }
+
+        .middle1 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+
+        #HYB {
+            font-size: 20px;
+            font-weight: 700;
+            color: skyblue;
+
+        }
+
+        #HYB1 {
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        .middle-container {
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+
+        }
+
+        .middle0 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flight {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        .flight0 {
+
+            border-radius: 10px;
+            width: 150px;
+            padding: 10px;
+            padding-right: 10px;
+            font-size: 15px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            align-items: center;
+            margin-left: 40px;
+
+        }
+
+        #small {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .flight-icon span {
+            font-size: 20px;
+            padding: 1px;
+
+        }
+
+        #swap button {
+            margin-top: 23px;
+            border-radius: 100%;
+            padding: 10px;
+            margin-left: 30px;
+        }
+
+        .last-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 15px;
+            padding: 25px;
+        }
+
+        .saving {
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            padding: 5px;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+        .Q2 {
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            padding: 5px;
+            margin-left: 5px;
+
+        }
+
+        .Form {
+            background-color: rgba(245, 245, 245, 0.915);
+            margin-top: 50px;
+            padding: 50px;
+
+
+        }
+
+        .main-form {
+            width: 450px;
+            height: 200;
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-left: 40px;
+
+        }
+
+        .line-1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .line-head {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .line-head2 {
+            font-size: 13px;
+            border-radius: 15px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            padding: 5px;
+            align-items: center;
+        }
+
+        .line-3 {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+        }
+
+        .line-3-1 {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+
+        }
+
+        .line-3-1 span {
+            margin-left: 5px;
+        }
+
+        .input {
+            width: 380px;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+        }
+
+        .check1 {
+            padding: 10px;
+            align-items: center;
+        }
+
+        .btn-submit {
+            width: 100%;
+            color: white;
+            background-color: black;
+            font-size: large;
+            padding: 11px;
+            border-radius: 10px;
+        }
+
+        .OR {
+            padding: 5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .OR::before,
+        .OR::after {
+            content: "________";
+
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        .img-btn {
+            width: 20px;
+
+        }
+
+        .btn-google {
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            width: 140px;
+            border-radius: 10px;
+        }
+
+        .google {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .last-form {
+            padding: 10px;
+            text-align: center;
+            font-size: medium;
+        }
+
+        .set {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .img-globe img {
+
+            width: 850px;
+            border-radius: 10px;
+
+        }
+
+        .img-globe p {
+            font-size: larger;
+            text-align: center;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .area {
+            background-color: whitesmoke;
+            margin-top: 50px;
+            padding: 50px;
+        }
+
+        .area-main {
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .head--1 {
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .head--0 {
+            color: skyblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .head--2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .small-element span {
+            border: 1px solid grey;
+            padding: 7px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 10px;
+        }
+
+        #el1 {
+            background-color: black;
+            color: white;
+        }
+
+        .card-area1 {
+            padding: 15px;
+            height: 680px;
+            scrollbar-width: none;
+            overflow: scroll;
+            overflow-x: hidden;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-left: 60px;
+
+        }
+
+        .card {
+            margin-top: 40px;
+            background-color: white;
+            border: 1px solid black;
+            width: 230px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px black;
+        }
+
+        .img-src {
+            width: 100%;
+            height: 150px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 13px;
+            color: rgb(12, 141, 192);
+        }
+
+        #seat {
+            color: red;
+
+        }
+
+        .card-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 10px;
+            color: rgb(73, 72, 72);
+        }
+
+        #prices {
+            font-size: 25px;
+            color: black;
+        }
+
+        #Book {
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgb(35, 159, 208);
+            color: black;
+            font-size: 14px;
+        }
+
+        #city {
+            padding: 5px 2px 3px 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .area-1 {
+            margin-top: 50px;
+            background-color: whitesmoke;
+            margin-bottom: 70px;
+        }
+
+        .area-main-head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            color: rgb(51, 177, 227);
+            font-size: 14px;
+        }
+
+        .area-main1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #head-1 {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        #head-2 {
+            color: rgb(189, 178, 178);
+            font-size: 15px;
+        }
+
+        .card-area2 {
+            margin-top: 70px;
+            padding: 20px;
+            padding-bottom: 70px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+
+        }
+
+
+        .card1 {
+            padding: 15px;
+            width: 230px;
+            border-radius: 10px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            margin-left: 50px;
+        }
+
+        .card-icon span {
+            padding: 8px;
+            background-color: rgb(0 99 152 / var(--tw-bg-opacity, 1));
+            border-radius: 10px;
+            color: white;
+
+        }
+
+        .content {
+            padding: 8px;
+            margin-top: 25px;
+        }
+
+        .content1 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px;
+        }
+
+        .content2 {
+            padding: 5px;
+            font-size: 13px;
+            color: grey;
+
+        }
+
+        .policy {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px;
+            color: rgb(24, 152, 203);
+            margin-top: 40px;
+        }
+
+        .policy span {
+            margin-left: 5px;
+        }
+
+        .area-2 {
+            background-color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .area-main2 {
+
+            background-color: white;
+            width: 400px;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+        }
+
+        .bell {
+
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgb(8, 70, 95);
+            color: white;
+            width: 25px;
+        }
+
+        .head-1 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+
+        }
+
+        .head-2 {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.416);
+
+        }
+
+        .corridor {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+
+        }
+
+        .corridor span {
+            padding: 4px;
+        }
+
+        .input-1 {
+            margin-bottom: 18px;
+            width: 100%;
+            padding: 8px;
+            border-radius: 10px;
+            border: None;
+        }
+
+        .notify div {
+            padding: 4px;
+
+        }
+
+        .notify input {
+            width: 10%;
+        }
+
+        .corridor1 div {
+            padding: 4px;
+
+        }
+
+        .corridor1 input {
+            width: 100%;
+            padding: 7px;
+            border: None;
+            border-radius: 10px;
+        }
+
+        .button-2 {
+            padding: 10px;
+            width: 100%;
+            background-color: #0A2541;
+            color: white;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .bell-last {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(0 15 34 / var(--tw-bg-opacity, 1));
+            padding: 20px;
+        }
+
+        .footer-body {
+            padding: 20px;
+            display: grid;
+            width: 1200px;
+            color: rgb(118 141 173 / var(--tw-text-opacity, 1));
+            grid-template-columns: 4fr 2.5fr 2.5fr 3fr;
+            background-color: rgb(0 15 34 / var(--tw-bg-opacity, 1));
+        }
+
+        .first {
+            margin-right: 20px;
+        }
+
+        .first div {
+            padding: 5px;
+
+        }
+
+        .input-2 {
+            padding: 10px;
+            border-radius: 5px;
+            border: None;
+
+        }
+
+        .button-3 {
+            padding: 10px;
+            border-radius: 5px;
+            border: None;
+            margin-left: 5px;
+
+        }
+
+        #footer-head {
+            font-size: 50px;
+        }
+
+        .second p {
+            font-size: 13px;
+        }
+
+        .third p {
+            font-size: 13px;
+        }
+
+        .fourth p {
+            font-size: 13px;
+        }
+
+        .download {
+            display: flex;
+            flex-direction: row;
+            padding: 7px;
+            align-items: center;
+            border: 1px solid white;
+            width: 200px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .download-1 {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .big {
+            color: white;
+        }
+
+        .download .material-symbols-outlined {
+            color: white;
+
+        }
+
+        .area-3 {
+            padding: 50px;
+            background-color: rgba(245, 245, 245, 0.764);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .area-main3 {
+            background-color: white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 10px;
+
+        }
+
+        #text1 {
+            font-size: 10px;
+            color: rgb(42, 157, 203);
+            padding: 10px;
+        }
+
+        #text2 {
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        #text3 {
+            font-size: 15px;
+            color: rgba(131, 130, 130, 0.778);
+            padding: 10px;
+        }
+
+        .small-cart {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+
+        }
+
+        .small-cart1 {
+            border-right: 1px solid grey;
+            margin-left: 20px;
+        }
+
+        .cart1 {
+            border: None;
+        }
+
+        .small-cart1:last-child {
+            border-right: None;
+        }
+
+        .num {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .img-show {
+            width: 450px;
+            height: 400px;
+            border-image: cover;
+        }
+
+        .imagess img {
+            border-radius: 25px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card1:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+        }
+
+        .area-main2:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+        }
+
+        .btn-submit:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+        }
+
+        .download:hover {
+
+            transform: scale(1.1);
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+        }
+
+        .main-form:hover {
+            box-shadow: 5px 2.5px 5px 2.5px black;
+        }
+
+        .middlepart:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span><img src="./image/logo air.ico" class="logo-img"></span>
+                <span class="title">AERO<span class="sub-title">VISTA</span></span>
+            </div>
+            <div class="Title1">
+                <span class="sub-head">AeroVista </span><br><span class="sub-head1">GLOBAL AIRWAYS & BOOKING</span>
+
+            </div>
+            <div class="container">
+                <div class="element">
+                    <span>BOOK <br>Flight</span>
+
+                </div>
+                <div class="element">
+                    <span>Explore <br>Destination</span>
+
+                </div>
+                <div class="element">
+                    <span>Manage <br>Booking</span>
+
+                </div>
+                <div class="element">
+                    <span>Flight <br>Tracker</span>
+
+
+                </div>
+                <div class="element">
+                    <span>Deals & <br>Rewards</span>
+
+                </div>
+            </div>
+            <div class="language-bar">
+                <span class="bi bi-cash"></span>
+                <select>
+                    <optgroup label="currency"></optgroup>
+                    <option>USD</option>
+                    <option>Rupees</option>
+                </select>
+                <span>|</span>
+                <span class="bi bi-globe"></span>
+
+                <select>
+                    <optgroup label="lang"></optgroup>
+                    <option> EN</option>
+                    <option> HN</option>
+                </select>
+
+            </div>
+
+
+            <div class="headset"><span class="bi bi-headset"></span></div>
+            <div class="login">
+                <span>Log In/Sign Up</span>
+            </div>
+            <div><img src="./image/prince.png" class="profile"></div>
+        </nav>
+    </header>
+    <div class="headingss">
+        <div class="H1">SEASONAL PRIVILEGE - Up to 25% Off Autumn Escapes</div>
+        <div class="H2">Where Elegance Meets The <br>Sky</div>
+        <div class="H3">Search cheap flights, flexible dates, and seamless preminum experiencs across
+            <br>340+destinationsworld.
+        </div>
+        <div class="H4">BOOK NOW!</div>
+
+    </div>
+    <main>
+        <div class="middlepart">
+            <div class="search-top">
+                <div class="search-btn">
+                    <button type="button" class="button-1"><span class="bi bi-arrow-left-right"><b> Round
+                                Trip</b></span></button>
+                    <button type="button" class="button-1"><span class="bi bi-arrow-right"><b> One
+                                Way</b></span></button>
+                    <button type="button" class="button-1"><span class="bi bi-airplane"><b>
+                                Multi-City</b></span></button>
+
+                </div>
+
+                <div class="search-btn1">
+                    <div class="Adult">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <select>
+                            <option>1Adult</option>
+                            <option>2Adult</option>
+                            <option>3Adult</option>
+                            <option>4Adult</option>
+                            <option>5Adult</option>
+                            <option>6Adult</option>
+                        </select>
+                    </div>
+                    <div class="class">
+                        <span class="material-symbols-outlined">
+                            airline_seat_recline_extra
+                        </span>
+                        <select>
+                            <option>Economy</option>
+                            <option>Bussiness</option>
+                            <option>First-class</option>
+                        </select>
+                    </div>
+                    <div class="ads">
+                        <span class="material-symbols-outlined">
+                            finance_mode
+                        </span>
+                        <span>Best Time to Book: Now</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="middle-container">
+                <div class="middle">
+                    <div class="middle-1">
+                        <span>ORIGIN HUB</span><br>
+                        <span id="HYB">HYB, <span class="ind"> India</span></span><br>
+                        <span>Begampet.Hussan Airport</span>
+                    </div>
+                </div>
+
+                <div id="swap">
+                    <button type="button" class="button-1"><span class="material-symbols-outlined">
+                            compare_arrows
+                        </span>
+                    </button>
+                </div>
+
+                <div class="middle">
+                    <div class="middle-1">
+                        <span>DESTINATION CITY</span><br>
+                        <span id="HYB">DEL, <span class="ind"> India</span></span><br>
+                        <span>Anand vihar.Terminal Airport</span>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="middle0">
+                        <div class="middle-1">
+                            <span>Travel TIMELINE</span><br>
+                            <span id="HYB1">Thu,OCT 12 - Fri,Oct 20</span><br>
+                            <span>8.Night Stay Mami</span>
+
+                        </div>
+                        <div><span class="bi bi-calendar-check-fill"></span></div>
+                    </div>
+                </div>
+                <div class="flight0">
+                    <div class="flight">
+                        <div class="flight-1">
+                            <span>Search <br>Flight</span><br>
+                            <div id="small"><span>Real Time Seat Matrix</span></div>
+
+                        </div>
+                        <div class="flight-icon"><span class="material-symbols-outlined">
+                                flight_takeoff
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="last-main">
+                <div>
+                    <span><input type="checkbox"> Direct Flights Only</span>
+                </div>
+                <div>
+                    <span><input type="checkbox"> Flexible Dates Only(3+days)</span><span class="saving">Save
+                        $80+</span>
+                </div>
+                <div>
+                    <span><input type="checkbox"> Include Partner Alliances</span>
+                </div>
+                <div>
+                    <span class="Q1">RECENT INQUIRIES:</span>
+                    <span class="Q2">BPL <span class="bi bi-arrow-right"></span> IND <span
+                            style="color: skyblue;">&450</span></span>
+                    <span class="Q2">IND<span class="bi bi-arrow-right"></span>USA <span
+                            style="color: skyblue;">$1000</span><span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <div class="Form">
+        <div class="set">
+            <div class="main-form">
+                <form action="#">
+                    <div class="line-1">
+                        <span class="line-head">Member Access</span>
+                        <span class="line-head2"> SSL SECURED</span>
+                    </div>
+                    <div class="line-2">
+                        <p>Sign in to access your itinerary records, saved passengers, and automated flight compensation
+                            claims.
+                        </p>
+                    </div>
+
+                    <div class="line-3">
+
+                        <div><label for="email" class="email1">EXECUTIVE EMAIL</label></div>
+                        <div class="line-3-1"><span class="material-symbols-outlined">
+                                mail
+                            </span>
+
+                            <span> <input type="text" placeholder="yadavprince@gmail.com" name="email"
+                                    class="input"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="line-3">
+                        <div><label for="password">Password</label></div>
+                        <div class="line-3-1"><span class="material-symbols-outlined">
+                                lock
+                            </span>
+                            <span><input type="password" name="password" placeholder="*************"
+                                    class="input"></span>
+
+                        </div>
+                    </div>
+                    <div class="check1">
+                        <input type="checkbox"><label for="check">Remember this terminal</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-submit"> Sign In to AeroVista</button>
+
+                    </div>
+                    <div class="OR">
+                        OR AUTHENTICATE WITH
+                    </div>
+                    <div class="google"><button type="submit" class="btn-google"><span><img src="./image/googel.ico"
+                                    alt="google image" class="img-btn"></span><span> Google SSO</span></button>
+                        <button type="button" class="btn-google">
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                            <span>Apple Passkey</span>
+                        </button>
+                    </div>
+
+                    <div class="last-form">Don't have an AeroVista account?<a href="#">Enroll Free Today</a></div>
+
+
+                </form>
+
+            </div>
+            <div class="img-globe">
+                <p>GLOBAL AIRLINES</p>
+                <img src="./image/space.png" alt="indian-map" class="space-img">
+            </div>
+        </div>
+
+    </div>
+    <div class="area">
+        <div class="area-main">
+            <div class="area-head">
+                <div class="head--0">
+                    <span class="material-symbols-outlined" class="icon1">
+                        explore
+                    </span>
+                    <span>CURATED GLOBAL NETWORK</span>
+
+                </div>
+                <div class="head--1">Trending Hubs & Low-Fare Corridors</div>
+                <div class="head--2">
+                    <div>Live prices refreshed every 30 Seconds across non-stop express routes.</div>
+                    <div class="small-element">
+                        <span id="el1">All Flights</span>
+                        <span>Europe</span>
+                        <span>Asia-Pacific</span>
+                        <span>Beach Getaways</span>
+                        <span>Last Minute</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-area">
+                <div class="card-area1">
+                    <div class="card">
+                        <img src="./image/delhi.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-785</span>
+                            </div>
+                            <div id="seat">4 Seats Left</div>
+                        </div>
+                        <div id="city">DELHI</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">7000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/HYDERABAD.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-458</span>
+                            </div>
+                            <div id="seat">125 Seats Left</div>
+                        </div>
+                        <div id="city">HYDERABAD</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">10000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/mumbai.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Spicejet-755</span>
+                            </div>
+                            <div id="seat">12 Seats Left</div>
+                        </div>
+                        <div id="city">MUMBAI</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">11000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/him.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-1</span>
+                            </div>
+                            <div id="seat">18 Seats Left</div>
+                        </div>
+                        <div id="city">HIMACHAL PRADESH</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">16000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/usa.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-686</span>
+                            </div>
+                            <div id="seat">1Seats Left</div>
+                        </div>
+                        <div id="city">USA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">500000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/chaina.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>IXIGO</span>
+                            </div>
+                            <div id="seat">122 Seats Left</div>
+                        </div>
+                        <div id="city">CHINA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">120000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/russia.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-900</span>
+                            </div>
+                            <div id="seat">2 Seats Left</div>
+                        </div>
+                        <div id="city">RUSSIA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">700000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/japan.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Vistara-525</span>
+                            </div>
+                            <div id="seat">86 Seats Left</div>
+                        </div>
+                        <div id="city">JAPAN</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">343000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/goa.png " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-10</span>
+                            </div>
+                            <div id="seat">152 Seats Left</div>
+                        </div>
+                        <div id="city">GOA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">5000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/ukrain.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-101</span>
+                            </div>
+                            <div id="seat">67 Seats Left</div>
+                        </div>
+                        <div id="city">UKRAIN</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">128000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/south.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Airindia-10</span>
+                            </div>
+                            <div id="seat">14 Seats Left</div>
+                        </div>
+                        <div id="city">SOUTH KOREA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">180000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./image/north.jpg " class="img-src">
+                        <div class="card-body">
+                            <div class="body-1">
+                                <span class="bi bi-airplane"></span>
+                                <span>Vistara</span>
+                            </div>
+                            <div id="seat">1 Seats Left</div>
+                        </div>
+                        <div id="city">NORTH KOREA</div>
+                        <div class="card-footer">
+                            <div><span>ROUND-TRIP FROM</span><br><span id="prices">140000&#8377;</span></div>
+                            <div id="Book">Book Now</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="area-1">
+        <div class="area-main1">
+            <div class="area-main-head">
+                <span class="material-symbols-outlined">
+                    verified
+                </span>
+                <span>THE AEROVISTA STANDARD</span>
+            </div>
+            <div id="head-1">Why Frequent Flyers Fly AeroVista</div>
+            <div id="head-2">Built from the ground up for frictionless flight booking and passenger-first guarentees.
+            </div>
+
+        </div>
+        <div class="card-area2">
+            <div class="card1">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                </div>
+                <div class="content">
+                    <span class="content1">Free 24h Cancellation</span>
+                    <span class="content2">Plans change. Cancel any reservation &nbsp;with 100% refund within 24 hours
+                        of &nbsp;booking, no penalty
+                        questions asked.</span>
+                </div>
+                <div class="policy">
+                    <span>Read policy</span>
+                    <span class="bi bi-arrow-right"></span>
+                </div>
+
+            </div>
+
+            <div class="card1">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        Price_check
+                    </span>
+                </div>
+                <div class="content">
+                    <span class="content1">Price Match Guarantee</span>
+                    <span class="content2">Find the exact flight cheaper anywhere &nbsp;else within 2 hours and we
+                        refund the &nbsp;difference plus give you a $50 &nbsp;AeroCredit.</span>
+                </div>
+                <div class="policy">
+                    <span>Price drop protection</span>
+                    <span class="bi bi-arrow-right"></span>
+                </div>
+
+            </div>
+
+            <div class="card1">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        Visibility
+                    </span>
+                </div>
+                <div class="content">
+                    <span class="content1">Zero Hidden Baggage Fees</span><br>
+                    <span class="content2">Transparent final checkout. Your carry-&nbsp;on and personal item allowances
+                        are &nbsp;always clearly itemized before card &nbsp;entry.</span>
+                </div>
+                <div class="policy">
+                    <span>Luggage dimensions</span>
+                    <span class="bi bi-arrow-right"></span>
+                </div>
+
+            </div>
+
+            <div class="card1">
+                <div class="card-icon">
+                    <span class="material-symbols-outlined">
+                        support_agent
+                    </span>
+                </div>
+                <div class="content">
+                    <span class="content1">24/7 Global Concierge</span>
+                    <span class="content2">Live rebooking support during weather &nbsp;disruptions, missed connections,
+                        and &nbsp;baggage routing delays within 90 &nbsp;seconds.</span>
+                </div>
+                <div class="policy">
+                    <span>Priority dispatch</span>
+                    <span class="bi bi-arrow-right"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="area-2">
+        <div class="area-main2">
+            <div class="bell">
+                <span class="material-symbols-outlined">
+                    notifications_active
+                </span>
+            </div>
+            <div class="head-1">Set Automated Fare Alerts</div>
+            <div class="head-2">
+                <p>We continuously crawl airline booking inventories. Get push notifications or emails the second prices
+                    drop below your
+                    desired threshold.</p>
+            </div>
+            <div class="corridor">
+                <span><label for="corridor">DESIRED CORRIDOR</label></span>
+                <span><input type="text" placeholder="Hyderabad (HYB) to London(LHR)" class="input-1"
+                        name="corridor"></span>
+            </div>
+
+            <div class="notify">
+                <div>NOTIFY ME WHEN PRICES DROPS UNDER</div>
+                <div>
+                    <span>
+                        <input type="text" placeholder="450&#8377;" class="input-1" name="rate">
+                    </span>
+                    <span> per adult traveler</span>
+                </div>
+            </div>
+            <div class="corridor1">
+                <div><label for="destination">DESTINATION EMAIL</label></div>
+                <div><input type="email" placeholder="executive@company.com" name="destination"></div>
+            </div>
+
+            <button type="submit" class="button-2">Create Price Watch</button>
+
+            <div class="bell-last">
+                <p>1-click unsubscribe anytime . Zero promotional spam policiy</p>
+            </div>
+        </div>
+        <div class="iframe">
+            <iframe width="900" height="595" src="https://www.youtube.com/embed/uKYMem9QpWU"
+                title="30 Minutes of Plane Spotting at Mumbai Airport | MEGA Compilation | 2024 [4K]" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+
+
+
+    </div>
+    <hr>
+    <div class="area-3">
+        <div class="area-main3">
+            <div class="text">
+                <div id="text1">UNREVELED HOPITALITY</div>
+                <div id="text2">Designed for Stillness,<br> Crafted for Speed</div>
+            </div>
+            <div id="text3">From ergonomic lay-flat sleeping suites on ultra-long-range journeys to chef-curated
+                seasonal dining,
+                AeroVista turns
+                air travel into your personal sanctuary.</div>
+            <div class="small-cart">
+                <div class="small-cart1">
+                    <span class="num">99.4%</span><br>
+                    <span>On-Time <br>Performance</span>
+                </div>
+                <div class="small-cart1">
+                    <span class="num">4.9/5</span><br>
+                    <span>Skytrax Cabin <br> Rating</span>
+                </div>
+                <div class="small-cart1">
+                    <span class="num">1.8M+</span><br>
+                    <span>Miles <br>Traveled</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="imagess">
+            <img src="./image/op.jpg" alt="airport" class="img-show">
+        </div>
+        <div class="imagess">
+            <img src="./image/chair.jpg" alt="chair" class="img-show">
+        </div>
+
+    </div>
+
+
+</body>
+<footer>
+    <div class="footer-main">
+        <div class="footer-body">
+            <div class="first">
+                <span><img src="./image/logo air.ico" alt="" class="logo-img"></span>
+                <span id="footer-head">AeroVista</span>
+                <p>Experience next-generation flight booking and travel intelligence. Connecting over 340 global hubs
+                    with
+                    state-of-the-art
+                    long-range aircraft and unmatched in-flight hospitality.</p>
+
+                <div>Fare Alerts & Global Dossier</div>
+                <div><input type="email" class="input-2" placeholder="executive@gmail.com"><button type="button"
+                        class="button-3">Subscribe</button></div>
+
+            </div>
+            <div class="second">
+                <h3>Destinations & Fleet</h3>
+                <p>Transatlantic Express Routes</p>
+                <p>Asia-Pacific Hub Corridors</p>
+                <p>Boeing 787-9 Dreamliner Fleet</p>
+                <p>Airbus A350-1000 XWB Suite</p>
+                <p>First & Business Suites Cabin</p>
+                <p>Terminal Lounges & VIP Access</p>
+            </div>
+
+            <div class="third">
+                <h3>Passenger Services</h3>
+                <p>Baggage Allowances & Tracking</p>
+                <p>Passenger Rights & Compensation</p>
+                <p>Special Assistance & Dietary</p>
+                <p>Flight Delay & Disruption Help</p>
+                <p>AeroVista Club Rewards</p>
+                <p>Corporate Mobility Portal</p>
+            </div>
+
+            <div class="fourth">
+                <p>
+                <h3>Mobile TravelEngine</h3>
+                </p>
+                <p>Manage live boarding passes,<br>
+                    terminal indoor wayfinding,and <br>
+                    gate notifications in real-time.
+                </p>
+                <div class="download">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            mobile
+                        </span>
+                    </div>
+                    <div class="download-1">
+                        <span>DOWNLOAD ON THE</span>
+                        <span class="big"> Apple App Store</span>
+                    </div>
+                </div>
+
+                <div class="download">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            android
+                        </span>
+                    </div>
+                    <div class="download-1">
+                        <span>GET IT ON</span>
+                        <span class="big"> Google Play Store</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</footer>
+
+</html>
