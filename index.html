@@ -25,6 +25,11 @@
             border: 1px solid rgb(202, 190, 190);
             padding: 11px;
             background-color: white;
+
+        }
+
+        #icon-flight {
+            font-size: 20px;
         }
 
         .element:hover {
@@ -33,6 +38,7 @@
             font-weight: bold;
             border: 1px solid white;
             border-radius: 10px;
+            transform: scale(1.1);
         }
 
         .logo-img {
@@ -44,33 +50,61 @@
             width: 50px;
             border: 1px solid rgb(202, 195, 195);
             border-radius: 50%;
-
+            display: flex;
+            margin-left: -50px
         }
 
         .logo {
             align-items: center;
             display: flex;
             flex-direction: row;
-
-
         }
 
+
         .container {
-            width: 500px;
+            width: 450px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
-            border: 1px solid rgb(189, 183, 183);
+            background-color: black;
+            border: 1px solid rgb(19, 9, 9);
             border-radius: 10px;
 
         }
 
         .element {
+            display: flex;
+            flex-direction: row;
             padding: 10px;
-            color: rgb(37, 37, 37, 0.8);
+            color: white;
             font-size: 15px;
+            font-weight: 700;
+        }
 
+        #plane {
+            color: goldenrod;
+            margin-right: 10px;
+        }
+
+        #plane:hover {
+            transform: scale(2);
+        }
+
+        .element-1 {
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid white;
+            background-color: black;
+            color: rgb(205, 155, 30);
+            font-weight: bold;
+        }
+
+        .element-1:hover {
+            transform: scale(1.1);
+            border: none
         }
 
 
@@ -85,7 +119,7 @@
         }
 
         .sub-title {
-            color: rgb(42, 225, 225);
+            color: goldenrod;
             font-weight: 700;
 
         }
@@ -98,8 +132,8 @@
             border-radius: 10px;
             margin-top: 8.5px;
             margin-left: -40px;
-            color: white;
-            background-color: rgba(12, 59, 200, 0.686);
+            color: goldenrod;
+            background-color: black;
             font-weight: 700;
 
         }
@@ -112,8 +146,17 @@
         .language-bar select {
             border-style: unset;
             align-items: center;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            background-color: black;
+            color: white;
+            font-weight: bold;
 
+
+        }
+
+        .language-bar span {
+            color: goldenrod;
+            font-weight: bold;
+            margin-top: 25px;
 
         }
 
@@ -121,10 +164,11 @@
             border: 1px solid black;
             max-height: 25px;
             margin-top: 9px;
-            padding: 7px;
-            border: 1px solid rgb(193, 187, 187);
+            padding: 10px;
+            border: 1px solid black;
             border-radius: 10px;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            background-color: black;
+
 
         }
 
@@ -141,7 +185,7 @@
             height: 270px;
             background-color: white;
             border-radius: 10px;
-            margin-left: 220px;
+            margin-left: 290px;
         }
 
         .headingss {
@@ -153,10 +197,27 @@
 
         .H1 {
             border: 1px solid rgb(172, 165, 165);
-            display: inline-block;
-            padding: 6px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             border-radius: 30px;
             margin-top: 30px;
+            width: 500px;
+            padding: 10px;
+            padding-left: 10px;
+            margin-left: 510px;
+        }
+
+        .offer {
+            color: goldenrod;
+        }
+
+        #crown {
+            color: goldenrod;
+        }
+
+        .H1 span {
+            margin-right: 8px;
         }
 
         .H2 {
@@ -167,13 +228,14 @@
 
         .H3 {
             font-size: 14px;
-            color: rgb(176, 171, 171);
+            color: rgb(250, 246, 235)
         }
 
         .H4 {
             font-size: 50px;
             font-weight: 700;
             margin-top: 10px;
+            color: goldenrod;
         }
 
         .search-btn {
@@ -194,14 +256,23 @@
 
         }
 
+        #vista {
+            color: goldenrod;
+        }
+
 
 
 
         .button-1:hover {
-            color: white;
+            color: goldenrod;
             background-color: black;
             font-size: 15px;
 
+        }
+
+        #button-1 {
+            color: goldenrod;
+            background-color: black;
         }
 
         .button-1 {
@@ -218,6 +289,11 @@
             flex-direction: row;
             justify-content: right;
 
+        }
+
+        #ind {
+            color: black;
+            font-size: 14px;
         }
 
         .class,
@@ -253,32 +329,48 @@
             display: flex;
             flex-direction: column;
             margin-left: 15px;
+
+
         }
+
 
 
         #HYB {
             font-size: 20px;
             font-weight: 700;
-            color: skyblue;
+            color: goldenrod;
 
         }
 
         #HYB1 {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 700;
 
         }
+
+        #person {
+            color: goldenrod;
+        }
+
 
         .middle-container {
             display: flex;
             flex-direction: row;
             padding: 15px;
+            margin-left: -27px;
 
+        }
+
+        #calender {
+            color: goldenrod;
+            position: absolute;
+            margin-left: 20px;
         }
 
         .middle0 {
             display: flex;
             flex-direction: row;
+
         }
 
         .flight {
@@ -287,8 +379,13 @@
             font-weight: 700;
             display: flex;
             flex-direction: row;
+        }
 
-
+        #icon-2 {
+            color: goldenrod;
+            position: absolute;
+            margin-top: -5px;
+            margin-left: 12px;
         }
 
         .flight0 {
@@ -298,15 +395,22 @@
             padding: 10px;
             padding-right: 10px;
             font-size: 15px;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            background-color: black;
             align-items: center;
+            color: goldenrod;
             margin-left: 40px;
+            transform: scale(1.1);
 
+        }
+
+        .flight:hover {
+            transform: scale(1.1);
         }
 
         #small {
             font-size: 12px;
             text-align: center;
+            font-weight: 100;
         }
 
         .flight-icon span {
@@ -332,7 +436,8 @@
 
         .saving {
             border-radius: 10px;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            background-color: black;
+            color: goldenrod;
             padding: 5px;
             margin-left: 5px;
             font-size: 12px;
@@ -372,14 +477,16 @@
         .line-head {
             font-size: 25px;
             font-weight: 700;
+            color: goldenrod;
         }
 
         .line-head2 {
             font-size: 13px;
             border-radius: 15px;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
-            padding: 5px;
+            background-color: black;
+            padding: 8px;
             align-items: center;
+            color: goldenrod;
         }
 
         .line-3 {
@@ -506,7 +613,7 @@
         }
 
         .head--0 {
-            color: skyblue;
+            color: goldenrod;
             display: flex;
             align-items: center;
         }
@@ -516,6 +623,8 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 10px;
+            margin-bottom: 5px;
+
         }
 
         .small-element span {
@@ -524,22 +633,26 @@
             border-radius: 15px;
             background-color: white;
             margin-left: 10px;
+
         }
 
         #el1 {
             background-color: black;
-            color: white;
+            color: goldenrod;
         }
 
         .card-area1 {
             padding: 15px;
-            height: 680px;
-            scrollbar-width: none;
+            height: 330px;
             overflow: scroll;
             overflow-x: hidden;
             display: grid;
             grid-template-columns: 3fr 3fr 3fr 3fr;
             margin-left: 60px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+
 
         }
 
@@ -549,7 +662,9 @@
             border: 1px solid black;
             width: 230px;
             border-radius: 10px;
-            box-shadow: 5px 5px 5px 5px black;
+            margin-left: 60px;
+
+
         }
 
         .img-src {
@@ -592,7 +707,8 @@
             padding: 10px;
             border-radius: 15px;
             background-color: rgb(35, 159, 208);
-            color: black;
+            color: white;
+            font-weight: 900;
             font-size: 14px;
         }
 
@@ -613,7 +729,7 @@
             flex-direction: row;
             align-items: center;
             padding: 10px;
-            color: rgb(51, 177, 227);
+            color: goldenrod;
             font-size: 14px;
         }
 
@@ -625,13 +741,21 @@
         }
 
         #head-1 {
-            font-size: 40px;
+            font-size: 60px;
             font-weight: 400;
         }
 
         #head-2 {
-            color: rgb(189, 178, 178);
-            font-size: 15px;
+            color: goldenrod;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .card1:hover {
+            .policy span {
+                transform: scale(1.1);
+            }
+
         }
 
         .card-area2 {
@@ -648,8 +772,10 @@
             padding: 15px;
             width: 230px;
             border-radius: 10px;
-            background-color: rgb(234 237 255 / var(--tw-bg-opacity, 1));
+            border: 1px solid black;
+            background-color: rgb(234 237 255 / var(--tw-bg-opacity, ));
             margin-left: 50px;
+            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
         }
 
         .card-icon span {
@@ -927,24 +1053,24 @@
         }
 
         .img-show {
-            width: 450px;
+            width: 400px;
             height: 400px;
             border-image: cover;
         }
 
         .imagess img {
             border-radius: 25px;
+
+
         }
 
         .card:hover {
             transform: scale(1.1);
+            box-shadow: 5px 5px 5px 5px black;
         }
 
-        .card1:hover {
-            transform: scale(1.1);
-            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
 
-        }
+
 
         .area-main2:hover {
             transform: scale(1.1);
@@ -953,8 +1079,9 @@
         }
 
         .btn-submit:hover {
-            transform: scale(1.1);
-            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+
+            color: goldenrod;
+
 
         }
 
@@ -966,13 +1093,29 @@
         }
 
         .main-form:hover {
-            box-shadow: 5px 2.5px 5px 2.5px black;
+            box-shadow: 10px 5px 10px 5px black;
+
         }
 
-        .middlepart:hover {
-            transform: scale(1.05);
-            box-shadow: 5px 2.5px 5px 2.5px rgb(26, 140, 185);
+        .element a:link,
+        .element a:visited,
+        .element a:active {
+            color: white;
+            text-decoration: none;
+        }
 
+        .login a:link,
+        .login a:visited,
+        .login a:active {
+            color: white;
+            text-decoration: none;
+        }
+
+        .small-element a:link,
+        .small-element a:visited,
+        .small a:active {
+            color: goldenrod;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -981,20 +1124,26 @@
     <header>
         <nav>
             <div class="logo">
-                <span><img src="./image/logo air.ico" class="logo-img"></span>
+                <span class="material-symbols-outlined" id="plane">
+                    flight
+                </span>
                 <span class="title">AERO<span class="sub-title">VISTA</span></span>
             </div>
             <div class="Title1">
-                <span class="sub-head">AeroVista </span><br><span class="sub-head1">GLOBAL AIRWAYS & BOOKING</span>
+                <span class="sub-head">Aero<span id="vista">Vista</span> </span><br><span class="sub-head1">GLOBAL
+                    AIRWAYS & BOOKING</span>
 
             </div>
             <div class="container">
-                <div class="element">
-                    <span>BOOK <br>Flight</span>
+                <div class="element-1">
+                    <div class="first-element"><span class="material-symbols-outlined" id="icon-flight">
+                            flight_takeoff
+                        </span></div>
+                    <div class="first-element"><span>BOOK <br>Flight</span></div>
 
                 </div>
                 <div class="element">
-                    <span>Explore <br>Destination</span>
+                    <a href="#1000"><span>Explore <br>Destination</span></a>
 
                 </div>
                 <div class="element">
@@ -1002,12 +1151,11 @@
 
                 </div>
                 <div class="element">
-                    <span>Flight <br>Tracker</span>
-
-
+                    <a href="https://www.flightaware.com/live/"><span>Flight <br>Tracker</span></a>
                 </div>
                 <div class="element">
-                    <span>Deals & <br>Rewards</span>
+
+                    <a href="https://www.dealrewards.in/about/"><span>Deals & <br>Rewards</span></a>
 
                 </div>
             </div>
@@ -1032,36 +1180,41 @@
 
             <div class="headset"><span class="bi bi-headset"></span></div>
             <div class="login">
-                <span>Log In/Sign Up</span>
+                <a href="#1001"><span>Log In/Sign Up</span></a>
             </div>
             <div><img src="./image/prince.png" class="profile"></div>
         </nav>
     </header>
     <div class="headingss">
-        <div class="H1">SEASONAL PRIVILEGE - Up to 25% Off Autumn Escapes</div>
+        <div class="H1"> <span class="material-symbols-outlined" id="crown">
+                crown
+            </span><span class="offer">SEASONAL PRIVILEGE - UP TO 25% OFF AUTUMN ESCAPES</span></div>
         <div class="H2">Where Elegance Meets The <br>Sky</div>
         <div class="H3">Search cheap flights, flexible dates, and seamless preminum experiencs across
             <br>340+destinationsworld.
         </div>
-        <div class="H4">BOOK NOW!</div>
+        <div class="H4">BOOK NOW</div>
 
     </div>
     <main>
         <div class="middlepart">
             <div class="search-top">
                 <div class="search-btn">
-                    <button type="button" class="button-1"><span class="bi bi-arrow-left-right"><b> Round
+                    <button type="button" class="button-1" id="button-1"><span class="bi bi-arrow-left-right"><b> Round
                                 Trip</b></span></button>
                     <button type="button" class="button-1"><span class="bi bi-arrow-right"><b> One
                                 Way</b></span></button>
                     <button type="button" class="button-1"><span class="bi bi-airplane"><b>
                                 Multi-City</b></span></button>
+                    <button type="button" class="button-1"><span class="bi bi-diamond-fill"><b>
+                                Private jet</b></span></button>
+
 
                 </div>
 
                 <div class="search-btn1">
                     <div class="Adult">
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" id="person">
                             person
                         </span>
                         <select>
@@ -1074,7 +1227,7 @@
                         </select>
                     </div>
                     <div class="class">
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" id="person">
                             airline_seat_recline_extra
                         </span>
                         <select>
@@ -1096,7 +1249,7 @@
                 <div class="middle">
                     <div class="middle-1">
                         <span>ORIGIN HUB</span><br>
-                        <span id="HYB">HYB, <span class="ind"> India</span></span><br>
+                        <span id="HYB">HYB, <span id="ind"> Hyderabad India</span></span><br>
                         <span>Begampet.Hussan Airport</span>
                     </div>
                 </div>
@@ -1111,7 +1264,7 @@
                 <div class="middle">
                     <div class="middle-1">
                         <span>DESTINATION CITY</span><br>
-                        <span id="HYB">DEL, <span class="ind"> India</span></span><br>
+                        <span id="HYB">DEL, <span id="ind">Delhi India</span></span><br>
                         <span>Anand vihar.Terminal Airport</span>
                     </div>
                 </div>
@@ -1120,20 +1273,21 @@
                         <div class="middle-1">
                             <span>Travel TIMELINE</span><br>
                             <span id="HYB1">Thu,OCT 12 - Fri,Oct 20</span><br>
-                            <span>8.Night Stay Mami</span>
+                            <span>Night Stay Mami</span>
 
                         </div>
-                        <div><span class="bi bi-calendar-check-fill"></span></div>
+                        <div><span class="bi bi-calendar-check-fill" id="calender"></span></div>
                     </div>
                 </div>
                 <div class="flight0">
                     <div class="flight">
                         <div class="flight-1">
-                            <span>Search <br>Flight</span><br>
-                            <div id="small"><span>Real Time Seat Matrix</span></div>
+
+                            <div>Search <br>Flight</div>
+                            <div id="small"><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Real Time Seat Matrix</span></div>
 
                         </div>
-                        <div class="flight-icon"><span class="material-symbols-outlined">
+                        <div class="flight-icon"><span class="material-symbols-outlined" id="icon-2">
                                 flight_takeoff
                             </span>
                         </div>
@@ -1156,9 +1310,9 @@
                 <div>
                     <span class="Q1">RECENT INQUIRIES:</span>
                     <span class="Q2">BPL <span class="bi bi-arrow-right"></span> IND <span
-                            style="color: skyblue;">&450</span></span>
+                            style="color: goldenrod;">&450</span></span>
                     <span class="Q2">IND<span class="bi bi-arrow-right"></span>USA <span
-                            style="color: skyblue;">$1000</span><span></span>
+                            style="color: goldenrod;">$1000</span><span></span>
                 </div>
 
             </div>
@@ -1167,12 +1321,14 @@
 
 
     </main>
-    <div class="Form">
+    <div class="Form" id="1001">
         <div class="set">
             <div class="main-form">
                 <form action="#">
                     <div class="line-1">
-                        <span class="line-head">Member Access</span>
+                        <span class="line-head"> <span class="material-symbols-outlined">
+                                person_4
+                            </span> &nbsp;Member Access</span>
                         <span class="line-head2"> SSL SECURED</span>
                     </div>
                     <div class="line-2">
@@ -1238,7 +1394,7 @@
         </div>
 
     </div>
-    <div class="area">
+    <div class="area" id="1000">
         <div class="area-main">
             <div class="area-head">
                 <div class="head--0">
@@ -1253,10 +1409,10 @@
                     <div>Live prices refreshed every 30 Seconds across non-stop express routes.</div>
                     <div class="small-element">
                         <span id="el1">All Flights</span>
-                        <span>Europe</span>
-                        <span>Asia-Pacific</span>
-                        <span>Beach Getaways</span>
-                        <span>Last Minute</span>
+                        <span><a href="#korea">Korea</a></span>
+                        <span><a href="#usa">USA</a></span>
+                        <span><a href="#goa">GOA</a></span>
+                        <span><a href="#uk">UKRAIN</a></span>
                     </div>
                 </div>
 
@@ -1327,7 +1483,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="usa">
                         <img src="./image/usa.jpg " class="img-src">
                         <div class="card-body">
                             <div class="body-1">
@@ -1375,7 +1531,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="japan">
                         <img src="./image/japan.jpg " class="img-src">
                         <div class="card-body">
                             <div class="body-1">
@@ -1391,7 +1547,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="goa">
                         <img src="./image/goa.png " class="img-src">
                         <div class="card-body">
                             <div class="body-1">
@@ -1407,7 +1563,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="uk">
                         <img src="./image/ukrain.jpg " class="img-src">
                         <div class="card-body">
                             <div class="body-1">
@@ -1423,7 +1579,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="korea">
                         <img src="./image/south.jpg " class="img-src">
                         <div class="card-body">
                             <div class="body-1">
@@ -1520,7 +1676,7 @@
                     </span>
                 </div>
                 <div class="content">
-                    <span class="content1">Zero Hidden Baggage Fees</span><br>
+                    <span class="content1">Zero Hidden Fees</span><br>
                     <span class="content2">Transparent final checkout. Your carry-&nbsp;on and personal item allowances
                         are &nbsp;always clearly itemized before card &nbsp;entry.</span>
                 </div>
@@ -1632,10 +1788,10 @@
 
         </div>
         <div class="imagess">
-            <img src="./image/op.jpg" alt="airport" class="img-show">
+            <img src="./image/girl window.png" alt="airport" class="img-show">
         </div>
         <div class="imagess">
-            <img src="./image/chair.jpg" alt="chair" class="img-show">
+            <img src="./image/flight-wing.png" alt="chair" class="img-show">
         </div>
 
     </div>
